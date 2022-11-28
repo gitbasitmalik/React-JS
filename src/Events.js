@@ -15,13 +15,15 @@ function Events()
     }
     return( 
         <div>
+        <form onSubmit={handleSubmit}>
             Username:<input type="username" onChange={handleChange}/>
             <br/>
             <br/>
             Password:<input type="password" onChange={handleChange}/>
             <br/>
             <button onClick={handleClick}>Cancel</button>
-            <input type="submit" onSubmit={handleSubmit}/>
+            <input type="submit"/>
+                <form/>
         </div>
      );
 }
