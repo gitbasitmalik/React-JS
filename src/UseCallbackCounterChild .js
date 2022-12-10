@@ -1,4 +1,4 @@
-function CounterChild(props) {
+function UseCallbackCounterChild(props) {
     console.log('Counter render : ', props.children);
     return (
         <button onClick={props.handleClick}>
@@ -7,4 +7,4 @@ function CounterChild(props) {
     );
 }
 
-export default CounterChild;
+export default UseCallbacCounterChild;
