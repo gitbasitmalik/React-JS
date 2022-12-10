@@ -7,4 +7,4 @@ function UseCallbackCounterChild(props) {
     );
 }
 
-export default UseCallbacCounterChild;
+export default UseCallbackCounterChild;
