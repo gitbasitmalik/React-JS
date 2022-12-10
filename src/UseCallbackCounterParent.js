@@ -1,5 +1,5 @@
 import {useState, useCallback} from 'react';
-import CounterChild from './CounterChild';
+import UseCallbackCounterChild from './UseCallbackCounterChild';
 
 function UseCallbackCounterParent() {
   const [incrementValue, setIncrementValue] = useState(0);
@@ -18,9 +18,9 @@ function UseCallbackCounterParent() {
   return(
   <div>
       <h2>increment value : {incrementValue}</h2>
-      <CounterChild handleClick={increment} value={incrementValue} >increment</CounterChild>
+      <UseCallbackCounterChild handleClick={increment} value={incrementValue} >increment</UseCallbackCounterChild>
       <h2>multiply value : {mulValue}</h2>
-      <CounterChild handleClick={multiply} value={mulValue} >multiply</CounterChild>
+      <UseCallbackCounterChild handleClick={multiply} value={mulValue} >multiply</UseCallbackCounterChild>
   </div>
   );
 }
